@@ -34,9 +34,10 @@ A simple dashboard to explore London cycle hire data. It has three main parts:
 
 To run streamlit application:
 
+cd into app and the run following command
+
 ```bash
-cd into app
-run the command streamlit run main.py
+streamlit run main.py
 ```
 
 Open your browser at [http://localhost:8501](http://localhost:8501).
