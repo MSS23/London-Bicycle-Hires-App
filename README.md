@@ -105,4 +105,4 @@ credentials/*.json
 __pycache__/
 ````
 
-This setup keeps your code and notebooks under version control but omits big data blobs and secrets.
+This setup keeps your code and notebooks under version control but virtual environment and secrets.
