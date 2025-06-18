@@ -32,10 +32,11 @@ A simple dashboard to explore London cycle hire data. It has three main parts:
 
 ### Dashboard
 
-To view all modules in one place, run:
+To run streamlit application:
 
 ```bash
-python app/main.py
+cd into app
+run the command streamlit run main.py
 ```
 
 Open your browser at [http://localhost:8501](http://localhost:8501).
