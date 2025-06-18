@@ -30,31 +30,6 @@ A simple dashboard to explore London cycle hire data. It has three main parts:
 
 ---
 
-## Usage
-
-### KPI Summary
-
-```bash
-python app/kpi_summary.py --source storage/Bronze --output storage/Silver/kpi_summary.parquet
-```
-
-### Bike Maintenance
-
-```bash
-python app/bike_maintenance.py \
-  --rides storage/Bronze/cycle_hire_2022.parquet \
-  --stations storage/Bronze/cycle_stations.parquet \
-  --output storage/Silver/maintenance_tasks.csv
-```
-
-### Station Capacity
-
-```bash
-python app/station_capacity.py \
-  --stations storage/Bronze/cycle_stations.parquet \
-  --output storage/Silver/station_capacity_report.csv
-```
-
 ### Dashboard
 
 To view all modules in one place, run:
