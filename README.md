@@ -8,6 +8,16 @@ A simple dashboard to explore London cycle hire data. It has three main parts:
 
 ---
 
+## Prerequisites
+
+""
+Python 
+uv package install
+GCP service account and project to be able to read the bigquery dataset
+private key 
+""
+
+
 ## Installation
 
 1. **Clone the repository**:
@@ -21,7 +31,7 @@ A simple dashboard to explore London cycle hire data. It has three main parts:
 ## Running the App
 ```bash
 # from the project root
-to run Streamlit dashboard:
+# to run Streamlit dashboard:
 uv run streamlit run app/main.py
 ```
 
@@ -83,5 +93,3 @@ credentials/*.json
 .venv/
 __pycache__/
 ````
-
-This setup keeps your code and notebooks under version control but virtual environment and secrets.
