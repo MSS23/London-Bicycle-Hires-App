@@ -5,6 +5,8 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "google>=3.0.0",
+    "google-cloud>=0.34.0",
     "langchain>=0.3.25",
     "pip>=25.1.1",
     "streamlit>=1.45.1",
