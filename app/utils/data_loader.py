@@ -3,7 +3,13 @@ import pandas as pd
 import os
 from google.cloud import bigquery
 
-store = Path(r"C:\Users\msidh\Documents\Coding\London Bicycle Hires App\storage\Bronze")
+from pathlib import Path
+
+from pathlib import Path
+
+# this file lives in app/utils/ -> go up 2 levels to project root
+BASE = Path(__file__).resolve().parents[2]
+store = BASE / "eda" / "storage" / "Bronze"
 
 if not store.exists():
     raise FileNotFoundError(f"Expected folder not found: {store.resolve()}")
