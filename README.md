@@ -16,34 +16,13 @@ A simple dashboard to explore London cycle hire data. It has three main parts:
    git clone https://github.com/MSS23/London-Bicycle-Hires-App.git
    cd London-Bicycle-Hires-App
    ```
-2. **Create and activate a virtual environment**:
-
-   ```bash
-   python -m venv .venv
-   source .venv/bin/activate      # On Windows: .venv\Scripts\activate
-   ```
-3. **Install dependencies** (using UV installer):
-
-   ```bash
-   uv install
-   ```
-
-> **Note:** UV reads from `pyproject.toml`, so you don’t strictly need a `requirements.txt` file. If you prefer `pip`, you can generate one with:
->
-> ```bash
-> pip freeze > requirements.txt
-> ```
-
 ---
 
 ## Running the App
-
-Once dependencies are installed, launch the dashboard with:
-
 ```bash
 # from the project root
 to run Streamlit dashboard:
-streamlit run app/main.py
+uv run streamlit run app/main.py
 ```
 
 Open your browser at [http://localhost:8501](http://localhost:8501) to view the app.
