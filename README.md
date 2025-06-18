@@ -54,30 +54,23 @@ London-Bicycle-Hires-App/
 │   └── utils/
 │       ├── data_loader.py
 │       └── helper.py
-├── credentials/         # service keys (ignored)
-├── eda/                 
+├── credentials/            # service keys (ignored)
+├── eda/                    # exploratory notebooks
+│   ├── data_analysis.ipynb
+│   ├── data_quality.ipynb
+│   └── store_dataset.ipynb
 ├── storage/
-│   ├── Bronze/         # raw data (ignored)
-│   └── Silver/         # outputs
+│   ├── Bronze/            # raw data
+│   │   ├── cycle_hire_2022.parquet
+│   │   └── cycle_stations.parquet
+│   └── Silver/            # processed outputs
+│       ├── cleaned_cycle_hire.parquet
+│       ├── cleaned_cycle_stations.parquet
 ├── .gitignore
-├── .gitattributes      # LFS settings
+├── .gitattributes         # LFS settings
 ├── pyproject.toml
 └── README.md
 ```
-
----
-
-## .gitignore suggestions
-
-* Ignore data folders and large files:
-
-  ```gitignore
-  eda/
-  storage/Bronze/
-  *.parquet
-  *.csv
-  ```
-
 ---
 
 ## Licence
