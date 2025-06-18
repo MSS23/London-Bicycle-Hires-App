@@ -1,51 +1,47 @@
-# London Bicycle Hires Dashboard
+## London Bicycle Hires Dashboard
 
-A simple dashboard to explore London cycle hire data. It has three main parts:
+A Streamlit dashboard for exploring London cycle hire data, featuring three main sections:
 
-* **KPI Summary**: Shows total rides, average ride time, busiest stations and other key figures.
-* **Bike Maintenance**: Lists bikes with errors or unusual usage patterns. For each flagged bike, you can filter by error type, view its metadata, see its most recent faulty trip, and locate where that trip ended on a map.
-* **Station Capacity**: Monitors station fill levels, highlights stations above 75% capacity or under 25% capacity, and finds up to five nearby stations under 50% capacity for rebalancing bikes from a selected station.
+1. **KPI Summary**: Displays total rides, average ride duration, busiest stations, and other key metrics.
+2. **Bike Maintenance**: Identifies bikes with errors or unusual usage. For flagged bikes, you can filter by error type, view metadata, inspect the latest faulty trip, and locate its endpoint on a map.
+3. **Station Capacity**: Monitors station fill levels, highlights stations over 75% or under 25% capacity, and suggests up to five nearby stations under 50% capacity for rebalancing.
 
 ---
 
 ## Prerequisites
 
-""
-Python 
-uv package install
-GCP service account and project to be able to read the bigquery dataset
-private key 
-""
+* **Python 3.x**
+* **pip** for installing packages
+* **Google Cloud**: service account with BigQuery dataset access
+* **Service account key** (JSON)
 
+---
 
-## Installation
+## Installation & Running
 
-1. **Clone the repository**:
+1. **Clone the repository**
 
    ```bash
    git clone https://github.com/MSS23/London-Bicycle-Hires-App.git
    cd London-Bicycle-Hires-App
    ```
----
+2. **Install dependencies and launch**
 
-## Running the App
-```bash
-# from the project root
-# to run Streamlit dashboard:
-uv run streamlit run app/main.py
-```
+   ```bash
+   uv run streamlit run app/main.py
+   ```
 
-Open your browser at [http://localhost:8501](http://localhost:8501) to view the app.
+Open your browser at [http://localhost:8501](http://localhost:8501).
 
 ---
 
 ## Notebooks
 
-Under `eda/` you’ll find Jupyter notebooks for exploratory work:
+The `eda/` directory contains Jupyter notebooks for data exploration:
 
-* **data\_analysis.ipynb**: Initial exploration of ride and station data, generating charts and summary tables.
-* **data\_quality.ipynb**: Checks data consistency, finds missing or outlier values, and documents cleaning steps.
-* **store\_dataset.ipynb**: Demonstrates loading raw data into Parquet format and storing it in `storage/Bronze`.
+* **`data_analysis.ipynb`**: Exploratory analysis of rides and stations with charts and tables.
+* **`data_quality.ipynb`**: Data consistency checks, outlier detection, and cleaning documentation.
+* **`store_dataset.ipynb`**: Loading raw data into Parquet and storing in `storage/Bronze`.
 
 ---
 
@@ -61,13 +57,14 @@ London-Bicycle-Hires-App/
 │   └── utils/
 │       ├── data_loader.py
 │       └── helper.py
-├── credentials/            # service keys (ignored)
-├── eda/                    # exploratory notebooks
+├── credentials/           # service keys (ignored by Git)
+│   └── bq_data_viewer.json
+├── eda/                   # exploratory notebooks
 │   ├── data_analysis.ipynb
 │   ├── data_quality.ipynb
 │   └── store_dataset.ipynb
 ├── storage/
-│   ├── Bronze/            # raw data (ignored)
+│   ├── Bronze/            # raw data (ignored by Git)
 │   │   ├── cycle_hire_2022.parquet
 │   │   └── cycle_stations.parquet
 │   └── Silver/            # processed outputs
@@ -75,21 +72,18 @@ London-Bicycle-Hires-App/
 │       ├── maintenance_tasks.csv
 │       └── station_capacity_report.csv
 ├── .gitignore
-├── .gitattributes         # LFS settings
-├── pyproject.toml
+├── .gitattributes        # LFS settings
+├── requirements.txt      # project dependencies
 └── README.md
-
 ```
 
 ---
 
+## .gitignore
+
 ```
-
-gitignore
-
-
 # Sensitive or environment files
 credentials/*.json
 .venv/
 __pycache__/
-````
+```
