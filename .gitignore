@@ -5,7 +5,6 @@ __pycache__/
 # Virtual env
 .venv/
 
-
 # Editor / OS cruft
 *.swp
 .DS_Store
