@@ -11,7 +11,7 @@ A Streamlit dashboard for exploring London cycle hire data, featuring three main
 ## Prerequisites
 
 * **Python 3.x**
-* **pip** for installing packages
+* **uv package installer** for installing packages
 * **Google Cloud**: service account with BigQuery dataset access
 * **Service account key** (JSON)
 
