@@ -5,8 +5,6 @@ __pycache__/
 # Virtual env
 .venv/
 
-# Credentials / secrets
-credentials/*.json
 
 # Editor / OS cruft
 *.swp
