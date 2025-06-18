@@ -12,12 +12,6 @@ credentials/*.json
 *.swp
 .DS_Store
 
-# Data & notebooks
-eda/
-storage/
-*.csv
-*.parquet
-
 # Build artifacts
 build/
 dist/
