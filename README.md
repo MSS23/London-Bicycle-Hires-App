@@ -95,7 +95,8 @@ London-Bicycle-Hires-App/
 ---
 
 ```
-```gitignore
+
+gitignore
 
 
 # Sensitive or environment files
