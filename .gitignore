@@ -17,8 +17,3 @@ build/
 dist/
 wheels/
 *.egg-info
-
-# Lockfiles
-pip-file.lock
-poetry.lock
-uv.lock
