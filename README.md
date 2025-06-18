@@ -89,28 +89,12 @@ London-Bicycle-Hires-App/
 ├── .gitattributes         # LFS settings
 ├── pyproject.toml
 └── README.md
+
 ```
 
-London-Bicycle-Hires-App/
-├── app/
-│   ├── main.py
-│   ├── kpi\_summary.py
-│   ├── bike\_maintenance.py
-│   ├── station\_capacity.py
-│   └── utils/
-│       ├── data\_loader.py
-│       └── helper.py
-├── credentials/         # service keys (ignored)
-├── eda/                 # notebooks (ignored)
-├── storage/
-│   ├── Bronze/         # raw data (ignored)
-│   └── Silver/         # outputs
-├── .gitignore
-├── .gitattributes      # LFS settings
-├── pyproject.toml
-└── README.md
+---
 
-````
+```
 ```gitignore
 
 
