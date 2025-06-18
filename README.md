@@ -55,7 +55,7 @@ London-Bicycle-Hires-App/
 │       ├── data_loader.py
 │       └── helper.py
 ├── credentials/         # service keys (ignored)
-├── eda/                 # notebooks (ignored)
+├── eda/                 
 ├── storage/
 │   ├── Bronze/         # raw data (ignored)
 │   └── Silver/         # outputs
@@ -77,7 +77,6 @@ London-Bicycle-Hires-App/
   *.parquet
   *.csv
   ```
-* Keep code, configs and small outputs under version control.
 
 ---
 
